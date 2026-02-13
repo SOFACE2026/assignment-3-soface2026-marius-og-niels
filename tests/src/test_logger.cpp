@@ -20,7 +20,7 @@ TEST_CASE("FileLogger")
 
     char *buffer = new char[length];
     logfile.read(buffer, length);
-    std::string contents(buffer, buffer + length - 1);
+    std::string contents(buffer, buffer + length );// dårlig test fil rettet for jer :D
     delete[] buffer;
 
     // get expected value accounting for os specific line termination
